@@ -1,0 +1,11 @@
+C:\Users\marvin.nascimento\OneDrive - STONE PAGAMENTOS S.A\VSProjects\Labs\DependencyScope\src\WebApi\bin\Debug\netcoreapp2.0\WebApi.deps.json
+C:\Users\marvin.nascimento\OneDrive - STONE PAGAMENTOS S.A\VSProjects\Labs\DependencyScope\src\WebApi\bin\Debug\netcoreapp2.0\WebApi.runtimeconfig.json
+C:\Users\marvin.nascimento\OneDrive - STONE PAGAMENTOS S.A\VSProjects\Labs\DependencyScope\src\WebApi\bin\Debug\netcoreapp2.0\WebApi.runtimeconfig.dev.json
+C:\Users\marvin.nascimento\OneDrive - STONE PAGAMENTOS S.A\VSProjects\Labs\DependencyScope\src\WebApi\bin\Debug\netcoreapp2.0\WebApi.dll
+C:\Users\marvin.nascimento\OneDrive - STONE PAGAMENTOS S.A\VSProjects\Labs\DependencyScope\src\WebApi\bin\Debug\netcoreapp2.0\WebApi.pdb
+C:\Users\marvin.nascimento\OneDrive - STONE PAGAMENTOS S.A\VSProjects\Labs\DependencyScope\src\WebApi\obj\Debug\netcoreapp2.0\WebApi.csprojResolveAssemblyReference.cache
+C:\Users\marvin.nascimento\OneDrive - STONE PAGAMENTOS S.A\VSProjects\Labs\DependencyScope\src\WebApi\obj\Debug\netcoreapp2.0\WebApi.csproj.CoreCompileInputs.cache
+C:\Users\marvin.nascimento\OneDrive - STONE PAGAMENTOS S.A\VSProjects\Labs\DependencyScope\src\WebApi\obj\Debug\netcoreapp2.0\WebApi.AssemblyInfoInputs.cache
+C:\Users\marvin.nascimento\OneDrive - STONE PAGAMENTOS S.A\VSProjects\Labs\DependencyScope\src\WebApi\obj\Debug\netcoreapp2.0\WebApi.AssemblyInfo.cs
+C:\Users\marvin.nascimento\OneDrive - STONE PAGAMENTOS S.A\VSProjects\Labs\DependencyScope\src\WebApi\obj\Debug\netcoreapp2.0\WebApi.dll
+C:\Users\marvin.nascimento\OneDrive - STONE PAGAMENTOS S.A\VSProjects\Labs\DependencyScope\src\WebApi\obj\Debug\netcoreapp2.0\WebApi.pdb

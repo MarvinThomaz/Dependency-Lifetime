@@ -1,0 +1,1029 @@
+{
+	"info": {
+		"name": "EventStore - Mundipagg - v1",
+		"_postman_id": "db5a3caf-8074-0b9c-7729-987cd76e208a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Services",
+			"description": "",
+			"item": [
+				{
+					"name": "GET Services",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "usr_qyYFEKFo",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "pass_MLDsR4H32",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dXNyX3F5WUZFS0ZvOnBhc3NfTUxEc1I0SDMy"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://eventstore.azurewebsites.net/eventstore/v1/services",
+							"protocol": "http",
+							"host": [
+								"eventstore",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"eventstore",
+								"v1",
+								"services"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "POST Services - Membership",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "usr_qyYFEKFo",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "pass_MLDsR4H32",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNyX3F5WUZFS0ZvOnBhc3NfTUxEc1I0SDMy"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"CaduMemberApi\",\n   \"team\": [],\n    \"company\": \"Stone Co\",\n    \"about\": \"Cadastro unificado do grupo Stone Co\",\n    \"status\": \"active\",\n    \"versions\": [\n        {\n            \"version\": \"v1\",\n            \"events\": [\n                \"member.created\",\n                \"member.updated\",\n                \"member-partner.created\",\n                \"member-partner.updated\",\n                \"member-partner.deleted\",\n                \"partner-address.created\",\n        \"partner-address.updated\",\n        \"partner-address.deleted\",\n        \"member-contact.created\",\n        \"member-contact.updated\",\n        \"member-contact.deleted\",\n        \"contact-email.created\",\n        \"contact-email.updated\",\n        \"contact-email.deleted\",\n        \"contact-phone.created\",\n        \"contact-phone.updated\",\n        \"contact-phone.deleted\",\n        \"member-extradata.created\",\n        \"member-extradata.updated\",\n        \"member-extradata.deleted\",\n        \"member-address.created\",\n        \"member-address.updated\",\n        \"member-address.deleted\",\n        \"member-tag.created\",\n        \"member-tag.deleted\",\n        \"member-workschedule.created\",\n        \"member-workschedule.updated\",\n        \"member-workschedule.deleted\",\n        \"member-bankaccount.created\",\n        \"member-bankaccount.updated\",\n        \"member-bankaccount.deleted\",\n        \"member-economicactivity.created\",\n        \"member-economicactivity.updated\",\n        \"member-economicactivity.deleted\",\n        \"member-benefit.created\",\n        \"member-benefit.updated\",\n        \"member-benefit.deleted\",\n        \"chain.created\",\n        \"chain.updated\",\n        \"chain.deleted\",\n         \"chain-configuration.created\",\n         \"chain-configuration.updated\",\n         \"chain-configuration.deleted\"\n            ]\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "http://eventstore.azurewebsites.net/eventstore/v1/services",
+							"protocol": "http",
+							"host": [
+								"eventstore",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"eventstore",
+								"v1",
+								"services"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "POST Services - AffiliationRisk",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "usr_qyYFEKFo",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "pass_MLDsR4H32",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNyX3F5WUZFS0ZvOnBhc3NfTUxEc1I0SDMy"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"AffiliationRisk\",\n  \"team\": [\n    {\n            \"name\": \"Patrick Svaiter | Stone\",\n            \"email\": \"psvaiter@stone.com.br\"\n        },\n        {\n          \"name\": \"Marvin Nascimento | Stone\",\n            \"email\": \"marvin.nascimento@stone.com.br\"\n        }],\n    \"company\": \"Stone Co\",\n    \"about\": \"Affiliation Risk\",\n    \"status\": \"active\",\n    \"versions\": [\n        {\n            \"version\": \"v1\",\n            \"events\": [ \"analysis.done\", \"analysis.failed\" ]\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "http://eventstore.azurewebsites.net/eventstore/v1/services",
+							"protocol": "http",
+							"host": [
+								"eventstore",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"eventstore",
+								"v1",
+								"services"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Services",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"CaduMemberApi\",\n    \"company\": \"Stone Co\",\n    \"about\": \"Cadastro unificado do grupo Stone Co\",\n    \"status\": \"active\",\n    \"versions\": [\n        {\n            \"version\": \"v1\",\n            \"events\": [\n                \"member.created\",\n                \"member.updated\",\n                \n                \"member-partner.created\",\n                \"member-partner.updated\",\n                \"member-partner.deleted\",\n                \n                \"partner-address.created\",\n        \"partner-address.updated\",\n        \"partner-address.deleted\",\n                \n                \"member-contact.created\",\n        \"member-contact.updated\",\n        \"member-contact.deleted\",\n        \n        \"contact-email.created\",\n        \"contact-email.updated\",\n        \"contact-email.deleted\",\n        \n        \"contact-phone.created\",\n        \"contact-phone.updated\",\n        \"contact-phone.deleted\",\n        \n        \"member-extradata.created\",\n        \"member-extradata.updated\",\n        \"member-extradata.deleted\",\n\n        \"member-address.created\",\n        \"member-address.updated\",\n        \"member-address.deleted\",\n        \n        \"member-tag.created\",\n        \"member-tag.deleted\",\n\n        \"member-workschedule.created\",\n        \"member-workschedule.updated\",\n        \"member-workschedule.deleted\",\n        \n        \"member-bankaccount.created\",\n        \"member-bankaccount.updated\",\n        \"member-bankaccount.deleted\",\n\n        \"member-economicactivity.created\",\n        \"member-economicactivity.updated\",\n        \"member-economicactivity.deleted\",\n\n        \"member-benefit.created\",\n        \"member-benefit.updated\",\n        \"member-benefit.deleted\",\n        \n        \"chain.created\",\n        \"chain.updated\",\n        \"chain.deleted\",\n        \n        \"chain-configuration.created\",\n        \"chain-configuration.updated\",\n        \"chain-configuration.deleted\",\n        \n        \"chain-association-between-chain-and-chain.created\",\n        \"chain-association-between-chain-and-chain.deleted\",\n        \n        \"chain-association-between-member-and-chain.created\",\n        \"chain-association-between-member-and-chain.deleted\"\n            ]\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "http://eventstore.azurewebsites.net/eventstore/v1/services/svc_3X3IMVcyg",
+							"protocol": "http",
+							"host": [
+								"eventstore",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"eventstore",
+								"v1",
+								"services",
+								"svc_3X3IMVcyg"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Events",
+			"description": "",
+			"item": [
+				{
+					"name": "POST Events - Membership",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "usr_qyYFEKFo",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "pass_MLDsR4H32",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNyX3F5WUZFS0ZvOnBhc3NfTUxEc1I0SDMy"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"type\" : \"member-tag.created\",\r\n  \"version\" : \"v1\",\r\n  \"publish\" : true,\r\n  \"data\" : {\r\n    \"key\" : \"A67691E3-AB63-4F56-BDA0-742FEA12CB9A\",\r\n    \"tag\" : \"NEWTAG 2\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "http://eventstore.azurewebsites.net/eventstore/v1/services/svc_WNNuM4H1/events",
+							"protocol": "http",
+							"host": [
+								"eventstore",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"eventstore",
+								"v1",
+								"services",
+								"svc_WNNuM4H1",
+								"events"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "POST Events - AffiliationRisk",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "usr_qyYFEKFo",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "pass_MLDsR4H32",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNyX3F5WUZFS0ZvOnBhc3NfTUxEc1I0SDMy"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"type\" : \"analysis.done\",\r\n  \"version\" : \"v1\",\r\n  \"publish\" : true,\r\n  \"data\" : {\r\n    \"analisisKey\": \"1FA08DF8-7FA7-413C-9BBF-20DCD36B89D8\",\r\n    \"memberKey\": \"A67691E3-AB63-4F56-BDA0-742FEA12CB9A\",\r\n    \"url\" : \"http://localhost/A67691E3-AB63-4F56-BDA0-742FEA12CB9A\",\r\n    \"sourceApplicationKey\" : \"33741AA0-0494-43B2-ABA4-26C804398220\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "http://eventstore.azurewebsites.net/eventstore/v1/services/svc_XaYsyjHO/events",
+							"protocol": "http",
+							"host": [
+								"eventstore",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"eventstore",
+								"v1",
+								"services",
+								"svc_XaYsyjHO",
+								"events"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "GET Events",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "usr_qyYFEKFo",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "pass_MLDsR4H32",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNyX3F5WUZFS0ZvOnBhc3NfTUxEc1I0SDMy"
+							},
+							{
+								"key": "X-Request-Id",
+								"value": "123456"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"version\": \"v1\",\n    \"type\": \"member-contact.created\",\n    \"publish\": true,\n    \"events\": [\n        \"member.created\",\n        \"member.updated\",\n        \"member-partner.created\",\n        \"member-partner.updated\",\n        \"member-partner.deleted\"\n    ]\n}"
+						},
+						"url": {
+							"raw": "http://eventstore.azurewebsites.net/eventstore/v1/services/svc_WNNuM4H1/events",
+							"protocol": "http",
+							"host": [
+								"eventstore",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"eventstore",
+								"v1",
+								"services",
+								"svc_WNNuM4H1",
+								"events"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Consumers",
+			"description": "",
+			"item": [
+				{
+					"name": "POST Consumers - Membership",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "usr_qyYFEKFo",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "pass_MLDsR4H32",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNyX3F5WUZFS0ZvOnBhc3NfTUxEc1I0SDMy"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"version\": \"v1\",\n  \"name\": \"client-CaduMemberApi-queue\",\n  \"description\": \"Client consumes all events related at member\",\n  \"filters\": [\n    \"#\"  \n  ],\n  \"retry_options\": {\n    \"max\": 3,\n    \"interval\": 300\n  }\n}"
+						},
+						"url": {
+							"raw": "http://eventstore.azurewebsites.net/eventstore/v1/services/svc_WNNuM4H1/consumers",
+							"protocol": "http",
+							"host": [
+								"eventstore",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"eventstore",
+								"v1",
+								"services",
+								"svc_WNNuM4H1",
+								"consumers"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "POST Consumers - AffiliationRisk",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "usr_qyYFEKFo",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "pass_MLDsR4H32",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNyX3F5WUZFS0ZvOnBhc3NfTUxEc1I0SDMy"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"version\": \"v1\",\n  \"name\": \"client-AffiliationRisk-queue\",\n  \"description\": \"Client consumes all events related at analisis\",\n  \"filters\": [\n    \"#\"  \n  ],\n  \"retry_options\": {\n    \"max\": 3,\n    \"interval\": 300\n  }\n}"
+						},
+						"url": {
+							"raw": "http://eventstore.azurewebsites.net/eventstore/v1/services/svc_XaYsyjHO/consumers",
+							"protocol": "http",
+							"host": [
+								"eventstore",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"eventstore",
+								"v1",
+								"services",
+								"svc_XaYsyjHO",
+								"consumers"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "GET Consumers - Membership",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "usr_zjEhrIQ6",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "pass_E97fLvuRP",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://eventstore.azurewebsites.net/eventstore/v1/services/svc_BAFgxTEk/consumers/queue_letwrcB6",
+							"protocol": "http",
+							"host": [
+								"eventstore",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"eventstore",
+								"v1",
+								"services",
+								"svc_BAFgxTEk",
+								"consumers",
+								"queue_letwrcB6"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Consumers - Membership",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"version\": \"v1\",\n  \"name\": \"client-queue\",\n  \"description\": \"Client consumes all events related at member\",\n  \"filters\": [\n    \"#\"\n  ],\n  \"retry_options\": {\n    \"max\": 3,\n    \"interval\": 300\n  }\n}"
+						},
+						"url": {
+							"raw": "http://eventstore.azurewebsites.net/eventstore/v1/services/svc_3X3IMVcyg/queues/queue_JkycXHeg",
+							"protocol": "http",
+							"host": [
+								"eventstore",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"eventstore",
+								"v1",
+								"services",
+								"svc_3X3IMVcyg",
+								"queues",
+								"queue_JkycXHeg"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Job",
+			"description": "",
+			"item": [
+				{
+					"name": "GET Job",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "usu_cadudev",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "pass_33dfba9d",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXN1X2NhZHVkZXY6cGFzc18zM2RmYmE5ZA=="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"job_8Q6fdviqr\",\n    \"object\": \"job\",\n    \"name\": \"Affiliation Risk Webhook test\",\n    \"description\": null,\n    \"version\": \"v1\",\n    \"filters\": [\n        {\n            \"event\": \"#\",\n            \"condition\": null\n        }\n    ],\n    \"app\": \"webhook\",\n    \"app_settings\": [\n        {\n            \"url\": \"http://88797434.ngrok.io/api/events-receiver\"\n        }\n    ],\n    \"status\": \"active\",\n    \"created_at\": \"2017-10-24T13:47:31.028Z\",\n    \"updated_at\": \"2017-10-24T13:47:31.028Z\",\n    \"deleted_at\": null\n}"
+						},
+						"url": {
+							"raw": "http://eventstore.azurewebsites.net/eventstore/v1/services/svc_lz8SBUqg/jobs/job_8Q6fdviqr",
+							"protocol": "http",
+							"host": [
+								"eventstore",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"eventstore",
+								"v1",
+								"services",
+								"svc_lz8SBUqg",
+								"jobs",
+								"job_8Q6fdviqr"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "POST Job - Webhook",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "usr_qyYFEKFo",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "pass_MLDsR4H32",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNyX3F5WUZFS0ZvOnBhc3NfTUxEc1I0SDMy"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"CadU Webhook test\",\n  \"description\": null,\n  \"version\": \"v1\",\n  \"filters\": [ \"#\" ],\n  \"app\": \"webhook\",\n  \"app_settings\": [\n    {\n          \"url\": \"http://94cb4976.ngrok.io/api/events-receiver\",\n          \"authentication\": {\n              \"user\": \"cadu-webhook-client\",\n              \"password\": \"cadu@123456\"\n          }\n      }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://eventstore.azurewebsites.net/eventstore/v1/services/svc_WNNuM4H1/jobs",
+							"protocol": "http",
+							"host": [
+								"eventstore",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"eventstore",
+								"v1",
+								"services",
+								"svc_WNNuM4H1",
+								"jobs"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "POST Job - Queue",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "usr_qyYFEKFo",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "pass_MLDsR4H32",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNyX3F5WUZFS0ZvOnBhc3NfTUxEc1I0SDMy"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"CadU Queue test\",\n  \"description\": null,\n  \"version\": \"v1\",\n  \"filters\": [ \"#\" ],\n  \"app\": \"queue\"\n}"
+						},
+						"url": {
+							"raw": "http://eventstore.azurewebsites.net/eventstore/v1/services/svc_WNNuM4H1/jobs",
+							"protocol": "http",
+							"host": [
+								"eventstore",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"eventstore",
+								"v1",
+								"services",
+								"svc_WNNuM4H1",
+								"jobs"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Job - Webhook",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "usr_qyYFEKFo",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "pass_MLDsR4H32",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dXNyX3F5WUZFS0ZvOnBhc3NfTUxEc1I0SDMy"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"CadU Webhook test\",\n  \"description\": null,\n  \"version\": \"v1\",\n  \"filters\": [ \"#\" ],\n  \"app\": \"webhook\",\n  \"app_settings\": [\n    {\n          \"url\": \"http://94cb4976.ngrok.io/api/events-receiver\",\n          \"authentication\": {\n              \"user\": \"cadu-webhook-client\",\n              \"password\": \"cadu@123456\"\n          }\n      }\n  ]\n}  "
+						},
+						"url": {
+							"raw": "http://eventstore.azurewebsites.net/eventstore/v1/services/svc_WNNuM4H1/jobs/job_VGoxt6iX",
+							"protocol": "http",
+							"host": [
+								"eventstore",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"eventstore",
+								"v1",
+								"services",
+								"svc_WNNuM4H1",
+								"jobs",
+								"job_VGoxt6iX"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Alteração de Job - PUT",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "usu_cadudev",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "pass_33dfba9d",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dXN1X2NhZHVkZXY6cGFzc18zM2RmYmE5ZA=="
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"id\": \"job_8Q6fdviqr\",\n            \"object\": \"job\",\n            \"name\": \"Affiliation Risk Webhook test\",\n            \"description\": null,\n            \"version\": \"v1\",\n            \"filters\": [\n                {\n                    \"event\": \"#\",\n                    \"condition\": null\n                }\n            ],\n            \"app\": \"webhook\",\n            \"app_settings\": [\n                {\n                    \"url\": \"http://88797434.ngrok.io/api/values\"\n                }\n            ],\n            \"status\": \"active\",\n            \"created_at\": \"2017-10-24T13:47:31.028Z\",\n            \"updated_at\": \"2017-10-24T13:56:06.599Z\",\n            \"deleted_at\": null\n        }"
+						},
+						"url": {
+							"raw": "http://eventstore.azurewebsites.net/eventstore/v1/services/svc_lz8SBUqg/jobs/job_8Q6fdviqr",
+							"protocol": "http",
+							"host": [
+								"eventstore",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"eventstore",
+								"v1",
+								"services",
+								"svc_lz8SBUqg",
+								"jobs",
+								"job_8Q6fdviqr"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Publish an event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"count\": 2,\r\n  \"message\": \"client 1 - created\"\r\n}"
+				},
+				"url": {
+					"raw": "http://eventstore.azurewebsites.net/eventstore/v1/services/svc_3X3IMVcyg/events/evt_vPXH0sMv/messages",
+					"protocol": "http",
+					"host": [
+						"eventstore",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"eventstore",
+						"v1",
+						"services",
+						"svc_3X3IMVcyg",
+						"events",
+						"evt_vPXH0sMv",
+						"messages"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET Settings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://eventstore.azurewebsites.net/eventstore/v1/services/svc_JmwILWSyM/settings",
+					"protocol": "http",
+					"host": [
+						"eventstore",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"eventstore",
+						"v1",
+						"services",
+						"svc_JmwILWSyM",
+						"settings"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

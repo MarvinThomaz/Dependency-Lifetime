@@ -1,0 +1,34 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D84AD75C-26A4-4891-830F-08DAB15A674C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{26AF89E5-6DF2-46AD-BF37-F8B0AE6D9571}"
+	ProjectSection(SolutionItems) = preProject
+		tools\DependencyLifetimeScopes.postman_collection.json = tools\DependencyLifetimeScopes.postman_collection.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "src\WebApi\WebApi.csproj", "{81F8F2F5-264D-4D14-8C76-B860AB9C98DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81F8F2F5-264D-4D14-8C76-B860AB9C98DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81F8F2F5-264D-4D14-8C76-B860AB9C98DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81F8F2F5-264D-4D14-8C76-B860AB9C98DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81F8F2F5-264D-4D14-8C76-B860AB9C98DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{81F8F2F5-264D-4D14-8C76-B860AB9C98DA} = {D84AD75C-26A4-4891-830F-08DAB15A674C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E634D92-B4C0-4369-8498-9CA1A5752176}
+	EndGlobalSection
+EndGlobal
